@@ -1,8 +1,8 @@
 
 :root{
     --bg:#FFFBF5;
-    --ink:#191919;
-    --muted:#6b6b6b;
+    --ink: rgb(61, 40, 18);
+    --muted: rgb(61, 40, 18);
     --brand:#2a6f4e;       /* tweak to your palette */
     --brand-ink:#0f3a28;
     --card:#ffffff;
@@ -14,7 +14,7 @@
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
   img{max-width:100%;height:auto;display:block}
-  a{color:var(--brand);text-decoration:none}
+  a{color:var(--ink);text-decoration:none}
   a:hover{text-decoration:underline}
   
   .container{width:min(1100px,92%);margin-inline:auto}
