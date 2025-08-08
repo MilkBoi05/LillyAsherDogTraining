@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lilly Asher Dog Training | Launceston</title>
+  <meta name="description" content="Force-free dog training and behaviour support in Launceston. Kind, practical help for puppies and adult dogs. Friendly, flexible, and clear." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">
+        <!-- Replace with your SVG/logo -->
+        <img src="logo.png" alt="Lilly Asher Dog Training" class="logo">
+        <span>Lilly Asher Dog Training</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="btn btn-small">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Kind, force-free dog training in Launceston</h1>
+          <p>Practical support for puppies and adult dogs. Clear steps, calm guidance, and a plan that fits real life.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn">Book a chat</a>
+            <a href="#services" class="link">See services</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- Replace with your image -->
+          <img src="hero.jpg" alt="Dog training session" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>A little about me</h2>
+        <p>
+          I'm based in Launceston, and I’ve completed a certificate in dog behaviour and psychology, as well as training to run puppy school.
+          I’ve recently started working professionally as a trainer, but I’ve been learning and working with dogs for years.
+        </p>
+        <p>
+          My goal is to help dogs and their people build trust and understanding without using force or fear. I don’t follow a strict formula.
+          Every dog is different, so my approach is flexible, gentle, and focused on what actually works for you and your dog.
+        </p>
+        <p>
+          Whether you’re dealing with a specific behaviour issue or starting out with a new puppy, I’m here to make things feel clearer and less overwhelming.
+          I also have two dogs of my own, Obi (Labrador) and Posy (Mastiff), which keeps my approach practical and grounded in everyday life.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>What I can help with</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Puppy training</h3>
+            <p>Foundations, toilet training, socialisation, gentle habits.</p>
+          </article>
+          <article class="card">
+            <h3>Obedience & manners</h3>
+            <p>Sit, stay, recall, calm greetings, better focus.</p>
+          </article>
+          <article class="card">
+            <h3>Behaviour consults</h3>
+            <p>Barking, reactivity, anxiety, over-arousal, problem-solving.</p>
+          </article>
+          <article class="card">
+            <h3>Loose-leash walking</h3>
+            <p>Less pulling, more calm, enjoyable walks.</p>
+          </article>
+          <article class="card">
+            <h3>Recall training</h3>
+            <p>Come when called, even with distractions.</p>
+          </article>
+          <article class="card">
+            <h3>Separation support</h3>
+            <p>Gradual plans for home-alone confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>From the pack</h2>
+        <div class="grid-2">
+          <blockquote class="quote">
+            <p>“Lilly made everything feel manageable. Big difference in a week.”</p>
+            <footer>— Sarah & Max</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Walks went from chaos to calm. Wish we’d started sooner.”</p>
+            <footer>— Alex & Ruby</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Clear, kind, and it actually works. Our pup loves her.”</p>
+            <footer>— Daniel & Poppy</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“No judgment. Just simple steps that helped.”</p>
+            <footer>— Brooke & Milo</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Get in touch</h2>
+        <p>Got questions or not sure where to start? Send a message and I’ll get back to you as soon as I can. You can also add a booking link here later.</p>
+        <form class="contact-form" name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <!-- Placeholder booking link -->
+          <a class="link" href="#" aria-disabled="true">Book a session (coming soon)</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Lilly Asher Dog Training · Launceston · Force-free</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
