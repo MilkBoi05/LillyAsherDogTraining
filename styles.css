@@ -25,6 +25,8 @@
   .nav{display:flex;align-items:center;height:124px;gap:16px}
   .nav-right{display:flex;align-items:center;gap:16px;margin-left:auto}
   .location{color:var(--muted);font-size:14px;font-weight:500}
+  .location{display:flex;align-items:center;gap:6px;font-weight:600}
+  .location-icon{width:16px;height:16px;object-fit:contain}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
   .logo{width:108px;height:108px;object-fit:contain}
   
