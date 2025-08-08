@@ -17,14 +17,16 @@
   a{color:var(--ink);text-decoration:none}
   a:hover{text-decoration:underline}
   
-  .container{width:min(1100px,92%);margin-inline:auto}
+  .container{width:min(1400px,92%);margin-inline:auto}
   .narrow{width:min(760px,92%)}
+  .main-container{display:flex;flex-direction: column;align-items: center;}
   
-  .site-header{position:sticky;top:0;background:#FFFBF5;z-index:50}
-  .nav{display:flex;align-items:center;height:96px;gap:16px}
+  .site-header{position:sticky;top:0;background:#FFFBF5;z-index:50;}
+  .nav{display:flex;align-items:center;height:124px;gap:16px}
   .nav-right{display:flex;align-items:center;gap:16px;margin-left:auto}
+  .location{color:var(--muted);font-size:14px;font-weight:500}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
-  .logo{width:72px;height:72px;object-fit:contain}
+  .logo{width:108px;height:108px;object-fit:contain}
   
   .menu{display:flex;gap:20px;align-items:center;flex:1 1 auto}
   .menu a{font-weight:600}
@@ -39,10 +41,10 @@
   
   .link{font-weight:700}
   
-  .section{padding:72px 0}
+  .section{padding:48px 0;width:1200px}
   .section.alt{background:var(--alt)}
   
-  .hero{padding:96px 0}
+  .hero{padding:48px 0}
   .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
   .hero h1{font-family:Outfit, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;font-weight:700;line-height:1.05;font-size:92px;margin:0 0 12px}
   .hero p{color:var(--muted);font-size:48px;margin:0 0 24px;font-weight:600}
