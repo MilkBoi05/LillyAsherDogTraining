@@ -12,7 +12,7 @@
   }
   
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}
   img{max-width:100%;height:auto;display:block}
   a{color:var(--ink);text-decoration:none}
   a:hover{text-decoration:underline}
@@ -67,8 +67,8 @@
   
   /* Testimonials Carousel */
   .testimonials-carousel{position:relative;margin-top:40px}
-  .carousel-container{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;border-radius:16px;position:relative}
-  .carousel-track{display:flex;gap:24px;padding:0 24px}
+  .carousel-container{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;border-radius:16px;position:relative;width:100%}
+  .carousel-track{display:flex;gap:24px;padding:0}
   .testimonial-card{flex:0 0 400px;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;text-align:center;padding:40px 20px;background:var(--card);border-radius:16px;border:1px solid var(--ring);box-shadow:var(--shadow)}
   .testimonial-dog{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:24px;border:4px solid var(--card);box-shadow:var(--shadow)}
   .testimonial-card .quote{background:transparent;border:none;box-shadow:none;padding:0}
@@ -79,11 +79,11 @@
   
   /* Mobile adjustments */
   @media (max-width: 768px) {
-    .testimonial-card{flex:0 0 300px;padding:32px 20px}
+    .testimonial-card{flex:0 0 280px;padding:32px 20px}
     .testimonial-dog{width:100px;height:100px}
     .testimonial-card .quote p{font-size:20px}
     .testimonial-card .quote footer{font-size:16px}
-    .carousel-track{gap:16px;padding:0 16px}
+    .carousel-track{gap:16px;padding:0}
   }
   
   .contact-form{display:grid;gap:14px;margin-top:8px}
@@ -175,33 +175,35 @@
   
   @media (max-width: 480px) {
     /* Typography */
-    .hero h1{font-size:36px}
-    .hero p{font-size:20px}
+    .hero h1{font-size:42px}
+    .hero p{font-size:24px}
     
+    .section p{font-size: 20px;}
     /* Layout */
-    .container{width:95%}
     .section{padding:40px 0}
-    .hero{padding:60px 0}
+    .hero{padding:20px 0}
     
     /* Navigation */
-    .nav{height:70px}
-    .logo{width:50px;height:50px}
+    .nav{height:108px}
+    .logo{width:96px;height:96px }
     
     /* Hero */
-    .hero-grid{gap:30px}
-    .hero-media img{width:250px}
+    .hero-grid{gap:30px; align-items: center; justify-content: center; }
+    .hero-media {display: flex; align-items: center; justify-content: center; }
+    .hero-media img{width:400px; }
     
     /* About */
-    .about-grid{gap:30px}
-    .dog-images{width:300px}
-    .dog-image{width:150px;height:150px}
-    .dog-image.posey{left:100px;bottom:-15px}
+    .about-grid{gap:0px}
+    .dog-images{width:350px;height: 200px; align-items: center; justify-content: center;}
+    .dog-image{width:200px;height:200px; right: 50px;}
+    .dog-image.posey{left:150px;bottom:0px}
     
     /* Services */
     .card{padding:20px}
     
     /* Testimonials */
-    .testimonial-card{padding:20px}
+    .testimonial-card{flex:0 0 260px;padding:20px}
     .testimonial-dog{width:80px;height:80px}
+    .carousel-track{gap:12px}
   }
   
