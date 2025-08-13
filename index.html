@@ -235,8 +235,11 @@
         <p>Got questions? Not sure where to start? I'm always happy to chat. Send a message using the form and I’ll get back to you as soon as I can.</p>
         <div class="contact-content">
           <div class="contact-form-section">
-            <form class="contact-form" name="contact" method="post" data-netlify="true">
+            <form class="contact-form" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" netlify>
               <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
               <div class="form-grid">
                 <label>
                   <span>Name</span>

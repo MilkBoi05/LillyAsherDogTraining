@@ -105,6 +105,9 @@
   .social-link:hover .social-icon{background:#fff;color:var(--brand)}
   .social-name{font-weight:600;font-size:16px}
   
+  /* Hide honeypot field */
+  .hidden{display:none}
+  
   @media (max-width: 768px) {
     .contact-content{grid-template-columns:1fr;gap:40px}
     .social-links{padding:24px 20px}
