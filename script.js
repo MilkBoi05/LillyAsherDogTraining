@@ -24,3 +24,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Contact form handling
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.contact-form');
+  const successMessage = document.getElementById('success-message');
+  
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      // Let Netlify handle the submission
+      // We'll show success message after a brief delay to simulate processing
+      setTimeout(function() {
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+        
+        // Scroll to the success message
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1000);
+    });
+  }
+});
