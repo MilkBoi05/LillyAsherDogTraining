@@ -25,22 +25,34 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contact form handling
+// Contact form handling with AJAX submission
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('.contact-form');
   const successMessage = document.getElementById('success-message');
   
   if (form) {
     form.addEventListener('submit', function(e) {
-      // Let Netlify handle the submission
-      // We'll show success message after a brief delay to simulate processing
-      setTimeout(function() {
-        form.style.display = 'none';
-        successMessage.style.display = 'block';
-        
-        // Scroll to the success message
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 1000);
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+        .then(() => {
+          // Hide form and show success message
+          form.style.display = 'none';
+          successMessage.style.display = 'block';
+          
+          // Scroll to the success message
+          successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was an error submitting the form. Please try again.');
+        });
     });
   }
 });
