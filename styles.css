@@ -65,6 +65,24 @@
   .quote p{margin:0 0 8px;font-size:18px}
   .quote footer{color:var(--muted);font-weight:600}
   
+  /* Alert Card */
+  .alert-card{
+    background:var(--card);
+    color:var(--ink);
+    border-radius:16px;
+    padding:32px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border:1px solid var(--ring);
+    margin-top:32px;
+  }
+  .alert-card p{
+    margin:0;
+    font-size:20px;
+    font-weight:400;
+    line-height:1.4;
+  }
+  
   /* Testimonials Carousel */
   .testimonials-carousel{position:relative;margin-top:40px}
   .carousel-container{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;border-radius:16px;position:relative;width:100%}
@@ -93,7 +111,7 @@
   input:focus,textarea:focus{outline:none;border-color:var(--brand)}
   
   /* Contact Layout */
-  .contact-content{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:start;margin-top:32px}
+  .contact-content{display:grid;grid-template-columns:1fr auto;gap:0px;align-items:start;margin-top:32px}
   .contact-form-section{min-width:0}
   
   /* Social Links */
@@ -174,6 +192,10 @@
     .section{padding:60px 0}
     .hero{padding:80px 0}
     
+    /* Alert Card */
+    .alert-card{padding:32px 20px;margin-top:24px}
+    .alert-card p{font-size:20px}
+    
     /* Navigation */
     .nav{height:80px}
     .logo{width:60px;height:60px}
@@ -224,6 +246,10 @@
     
     /* Services */
     .card{padding:20px}
+    
+    /* Alert Card */
+    .alert-card{padding:20px;margin-top:20px}
+    .alert-card p{font-size:18px}
     
     /* Testimonials */
     .testimonial-card{flex:0 0 260px;padding:20px}
